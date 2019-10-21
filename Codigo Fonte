@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main()
-{
+{  
     int x, y; //VARIAVEL
     printf("1.PAPEL \n2.PEDRA \n3.TESOURA");
     printf("\nPRIMEIRO JOGADOR: ");
