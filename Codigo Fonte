@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int x, y; //VARIAVEL
+    printf("1.PAPEL \n2.PEDRA \n3.TESOURA");
+    printf("\nPRIMEIRO JOGADOR: ");
+    scanf("%d", &x);
+    printf("\nSEGUNDO JOGADOR: ");
+    scanf("%d", &y);
+    if (x>3)
+        printf("JOGADA DO PRIMEIRO JOGADOR INVALIDA\n");
+    if (y>3)
+        printf("JOGADA DO SEGUNDO JOGADOR INVALIDA\n");
+    if (x==1) //CASO O PRIMEIRO JOGADOR TENHA ESCOLHIDO PAPEL
+    {
+        switch (y)
+        {
+        case 1:
+            printf("EMPATE");
+            break;
+        case 2:
+            printf("JOGADOR 1 GANHA");
+            break;
+        case 3:
+            printf("JOGADOR 2 GANHA");
+            break;
+        }
+    }
+    if (x==2) //CASO O PRIMEIRO JOGADOR TENHA ESCOLHIDO PEDRA
+    {
+        switch (y)
+        {
+        case 2:
+            printf("EMPATE");
+            break;
+        case 3:
+            printf("JOGADOR 1 GANHA");
+            break;
+        case 1:
+            printf("JOGADOR 2 GANHA");
+            break;
+        }
+    }
+    if (x==3) //CASO O PRIMEIRO JOGADOR TENHA ESCOLHIDO TESOURA
+    {
+        switch (y)
+        {
+        case 3:
+            printf("EMPATE");
+            break;
+        case 1:
+            printf("JOGADOR 1 GANHA");
+            break;
+        case 2:
+            printf("JOGADOR 2 GANHA");
+            break;
+        }
+    }
+    return 0;
+}
